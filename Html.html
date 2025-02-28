@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="landing-page" class="page">
+        <h1>Hii Love, would you fancy a date with me for our soon to be 2nd year anniversary next month???</h1>
+        <button id="yes-btn" onclick="nextPage('date-options')">Yes</button>
+        <button id="no-btn" onclick="showSadPuppy()">No</button>
+        <img id="puppy-img" src="Golden.jpg" alt="Sad Puppy">
+    </div>
+
+    <div id="date-options" class="page hidden">
+        <h2>Since the midterm is right around the corner of our anniversary, we only have two possible dates for the date.</h2>
+        <button onclick="nextPage('dinner-options')">March 7</button>
+        <button onclick="nextPage('dinner-options')">March 8</button>
+    </div>
+
+    <div id="dinner-options" class="page hidden">
+        <h2>Choose the dinner venue:</h2>
+        <div>
+            <img src="A_romantic_buffet_dinner_cruise_on_a_luxurious_boa.png" alt="Buffet Dinner Cruise">
+            <button onclick="nextPage('agenda')">Buffet Dinner Cruise</button>
+        </div>
+        <div>
+            <img src="A_cozy_steakhouse_by_the_river_with_elegant_outdoo.png" alt="Steakhouse by the River">
+            <button onclick="nextPage('agenda')">Steakhouse by the River</button>
+        </div>
+    </div>
+
+    <div id="agenda" class="page hidden">
+        <h2>A Sneak Peek into the Date</h2>
+        <div class="destination">
+            <img src="10089B37-3926-46DD-B39C-677F07CA7B6C.jpeg" alt="Destination 1">
+            <p>A place to relax, have a picnic and eat bf’s cooking (can’t guarantee if pass or fail).</p>
+        </div>
+        <div class="destination">
+            <img src="BA8D9CBF-6A40-4433-9FCD-1A20C4B140B0.jpeg" alt="Destination 2">
+            <p>Let’s walk around this area where sunlight falls through gaps between each aesthetic building. Just taking a stroll to relieve the fullness from lunch.</p>
+        </div>
+        <div class="destination">
+            <img src="D94B4579-EE07-45B7-8061-4E8711C81854.jpeg" alt="Destination 3">
+            <p>Be one with nature and one with the city of Bangkok. Lots of cute and aesthetic places to take pictures.</p>
+        </div>
+        <div class="destination">
+            <img src="32B2095C-623C-4312-B580-1F6A2B73DC29.jpeg" alt="Destination 4">
+            <p>Let’s enjoy the sunset by the bridge and take more photos there!</p>
+        </div>
+        <div class="destination">
+            <p>Final Destination: The dinner choice you selected earlier.</p>
+        </div>
+        <button onclick="nextPage('ending')">Finish</button>
+    </div>
+
+    <div id="ending" class="page hidden">
+        <h2>Looking forward to our date 😍 Be ready to leave around 9 AM!</h2>
+    </div>
+</body>
+</html>
